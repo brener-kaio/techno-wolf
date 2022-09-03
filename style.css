@@ -1,0 +1,307 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #00171f;
+    font-family: 'Space Mono', monospace;
+}
+
+header{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 117px;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    
+}
+
+.nav-list a{
+    font-family: 'JetBrains Mono', monospace;
+    text-decoration: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-left: 32px;
+    transition: 0.3s;
+}
+
+.nav-list a:hover{
+    opacity: 0.7;
+}
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #FFFFFF;
+    margin: 8px;
+}
+
+main {
+    place-items: center;
+    text-align: center;
+    background-image: url(./assets/Design\ sem\ nome\ \(3\).png);
+    background-repeat: no-repeat;
+    background-position: 5vw 5vh;
+}
+
+main h1{
+    display: inline-block;
+    color: #00A8E8;
+    font-size: 3em;
+    font-weight: 700;
+    margin-top: 60px;
+    background-color: transparent;
+}
+
+main h2{
+    color: #ffff;
+    font-size: 2em;
+}
+
+.move{
+    border-right: 2px solid rgba(255,255, 255, 0.75);
+    color: #ffff;
+    font-size: 2em;
+    margin-bottom: 60px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.typing-animation {
+    animation: blink 500ms steps(40) infinite normal, 
+    typing 4s steps(40) 1s normal;
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 26em;
+    }
+}
+
+@keyframes blink{
+    from{
+        border-right: 2px solid rgba(255,255, 255, 0.75);
+    }
+    to{
+        border-right: 2px solid rgba(255,255, 255, 0.01) ;
+    }
+}
+
+main a{
+    padding: 15px 20px;
+    margin-top: 60px;
+    background: #00A8E8;
+    box-shadow: 0px 4px 20px #584DB3;
+    border-radius: 10px;
+    color: black;
+    font-weight: 700;
+}
+
+main a:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    background-color: #584DB3;
+}
+
+hr{
+    border-color: black;
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.servicos h3{
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Patua One', cursive;
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.conteiner{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.box{
+    width: 35vw;
+    background-color: #00A8E8;
+    text-align: center;
+    box-shadow: 0px 7px 20px 9px rgba(88, 77, 179, 0.4);
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.box h4{
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.box p {
+    text-align: left;
+    width: 80%;
+    margin: auto;
+}
+
+.sobre{
+    text-align: center;
+    color: #FFFFFF;
+    width: 40vw;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.sobre h3{
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Patua One', cursive;
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.cta{
+    color: #FFFFFF;
+    font-family: 'Patua One', cursive;
+    font-size: 1.5em;
+    display: flex;
+    gap: 60px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.grid1{
+    margin-top: 50px;
+    margin-left: 20vw;
+}
+
+.grid{
+    margin-top: 50px;
+    width: 30vw;
+}
+
+.cta a{
+    padding: 15px 20px;
+    background: #584DB3;
+    box-shadow: 0px 4px 20px #00A8E8;
+    border-radius: 10px 10px 60px 10px;
+    color: black;
+}
+
+.cta a:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    background-color: #00A8E8;
+}
+
+.contato{
+    text-align: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.contato h3{
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Patua One', cursive;
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.contato p{
+    margin-bottom: 15px;
+}
+
+.contato img{
+    height: 50px;
+    gap: 10px;
+}
+
+.contato img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.contato p img{
+    height: 16px;
+}
+
+.contato p img:hover{
+    transform: scale(1);
+    cursor:default;
+}
+
+footer{
+    font-family: 'Times New Roman', Times, serif;
+    margin: auto;
+    background-color: #141616;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+footer img{
+    height: 90px;
+    border-radius: 50px;
+}
+
+@media (max-width: 800px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .nav-list {
+        position: absolute;
+        width: 100%;
+        top: 117px;
+        right: 0;
+        background-color: #7800FF;
+        display: block;
+        transform: translatey(-220%);
+        transition: transform 0.3s ease-in;
+        text-align: center
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .nav-list.active{
+        transform: translateX(0);
+    }
+}
